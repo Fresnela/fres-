@@ -1,0 +1,202 @@
+/*palette: 
+- LightSkyBlue
+- deepskyblue
+- MediumSlateBlue
+- SlateGrey
+- Black
+- White
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*FORMULAIRE D'INSCRIPTION ET DE CONNEXION*/
+#form label,
+#form input,
+#form textarea{
+	display: block;
+}
+
+/*CSS DU MENU NAV*/
+nav{
+	display: flex;
+	background-color: lightskyblue;
+	height: 50px;
+	width: 100%;
+	box-shadow:0px 2px 2px grey;
+	margin-bottom: 20px;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+
+	width: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav a:hover{
+	background-color: deepskyblue;
+}
+
+/*AFFICHAGE PAGE INDEX ET COMPTE*/
+#main-content{
+	display: flex;
+}
+#message-form,
+#profil{
+	width: 30%;
+}
+#message-form form{
+	width: 90%;
+	margin: auto;
+	font-family: sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#message-form textarea{
+	font-size: 18px;
+	resize: none;
+	width: 100%;
+	margin-bottom: 15px;
+	border: 2px solid grey;
+	padding: 4px;
+}
+#message-form input[type=submit]{
+	padding: 10px;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 18px;
+	background-color: ghostwhite;
+	border-color: lightsteelblue;
+	border-style: solid;
+}
+#message-form input[type=submit]:hover{
+	background-color: mediumslateblue;
+	color: white;
+}
+
+#messages-cont{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: calc(100vh - 70px);
+	overflow: auto;
+}
+.message{
+	margin-bottom: 15px;
+	border-radius: 10px;
+	width: 60%;
+	background-color: ghostwhite;
+	border: 2px solid lightsteelblue;
+	padding: 15px;
+	font-family: sans-serif;
+}
+.message h5{
+	font-size: 18px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	color: darkslateblue;
+}
+.message h5 a{
+	text-decoration: none;
+	color: inherit;
+}
+.message h5 a:hover{
+	color: lightsteelblue;
+}
+
+.message p{
+	line-height: 25px;
+}
+#profil{
+	text-align: center;
+	font-family: sans-serif;
+}
+#profil h2{
+	color: darkslateblue;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+#profil p{
+	font-size: 24px;
+	line-height: 38px;
+}
+
+/*PAGE DE CONNEXION ET D'INSCRIPTION*/
+
+#form-cont{
+	width: 33%;
+	margin: auto;
+	margin-top: 70px;
+
+	background-color: ghostwhite;
+	border-radius: 10px;
+	border:  2px solid lightsteelblue;
+	padding: 20px;
+}
+#form-cont form{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	font-family: sans-serif;
+}
+#form-cont label{
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+#form-cont input, #form-cont textarea{
+	resize: none;
+	padding: 5px;
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+#form-cont input[type=submit]{
+	padding: 10px;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 18px;
+	background-color: ghostwhite;
+	border-color: lightsteelblue;
+	border-style: solid;
+}
+#form-cont input[type=submit]:hover{
+	background-color: mediumslateblue;
+	color: white;
+}
+#form-cont a{
+	display: block;
+	width: fit-content;
+	margin: auto;
+}
+#banner {
+  line-height: 1.5rem;
+  width: 2%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+p {
+  
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5rem;
+}

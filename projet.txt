@@ -1,0 +1,33 @@
+PROJET "TWITTER"
+
+BASE bts4b
+
+table utilisateurs (compte, mdp, bio)
+	- id INT(6)
+	- compte VARCHAR(15)
+	- mdp VARCHAR(25)
+	- bio SMALLTEXT
+table messages (compte, message, date, heure)
+
+I] creation de compte
+	- Nom de compte unique
+	- Mot de passe securisé?
+	- mot passe confirmé equivalent
+	- Bio/description
+	(- ajouter image de profil)
+
+II] connexion avec compte
+	- connexion semi-permanente
+	- bouton de deconnexion
+
+III] publication de messages
+	- lié via le nom de compte
+	- 255 caracteres max
+	- date + heure de publication
+	(- ajout image)
+
+IV] affichage de tout les messages
+	- affichage chronologique du plus recent au plus anciens
+
+V] affichage des messages d'un compte
+	- affichage chronologique du plus recent au plus anciens
